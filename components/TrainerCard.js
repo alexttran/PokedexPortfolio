@@ -5,7 +5,7 @@ export default function TrainerCard() {
     <section id="about" className="section">
       <div className="grid md:grid-cols-3 gap-6 items-stretch">
         <div className="card p-6 flex items-center justify-center bg-gradient-to-br from-poke-50 to-white dark:from-zinc-800 dark:to-zinc-900">
-          <img src="/avatar.png" alt="Trainer Avatar" className="w-48 h-48 object-cover rounded-2xl border-4 border-black/20 dark:border-white/10" />
+          <img src="../public/ProfilePic.PNG" alt="Trainer Avatar" className="w-48 h-48 object-cover rounded-2xl border-4 border-black/20 dark:border-white/10" />
         </div>
         <div className="md:col-span-2 card p-6">
           <h2 className="text-4xl font-bold tracking-wide text-poke-700">Trainer Profile</h2>
