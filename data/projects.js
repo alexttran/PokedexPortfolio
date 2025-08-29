@@ -20,10 +20,10 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Squirtle Speech',
+    name: 'Weather App',
     description: 'Web speech coach that records, scores clarity, and suggests drills. Poké‑clean UI and privacy‑first.',
-    image: '/projects/squirtle-speech.png',
-    location: 'https://yourdomain.com/squirtle-speech',
+    image: '../projects/WeatherApp.png',
+    location: 'https://weatherapp-np1t.onrender.com/',
     types: ['Next.js', 'WebAudio', 'OpenAI'],
     year: 2025
   }
