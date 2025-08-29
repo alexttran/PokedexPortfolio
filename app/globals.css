@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --poke-red: #EE1515; /* bright classic red */
+}
+
+/* Retro-ish pixel edges */
+.px-border { box-shadow: 0 0 0 3px rgba(0,0,0,0.8), inset 0 0 0 2px rgba(255,255,255,0.2); }
+.px-btn { box-shadow: 0 3px 0 rgba(0,0,0,0.5); }
+.px-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 rgba(0,0,0,0.6); }
+
+html, body { scroll-behavior: smooth; }
+
+/***** Tailwind layer tweaks *****/
+@layer base {
+  ::selection { background: var(--poke-red); color: white; }
+}
+
+@layer components {
+  .card { @apply rounded-2xl border border-black/10 dark:border-white/10 bg-white/90 dark:bg-zinc-800/80 backdrop-blur px-border; }
+  .section { @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16; }
+  .badge { @apply inline-flex items-center gap-1 rounded-full border border-black/10 dark:border-white/10 px-3 py-1 text-sm; }
+  .linkish { @apply underline decoration-dotted underline-offset-2 hover:text-poke-600; }
+}
