@@ -2,29 +2,29 @@
 const projects = [
   {
     id: 1,
-    name: 'Pikadata ETL',
-    description: 'A playful ETL pipeline that evolves raw CSVs into clean datasets. Features batching, schema validation, and a data "battle" QA mode.',
-    image: '/projects/pikadata.png',
-    location: 'https://github.com/you/pikadata',
-    types: ['Node.js', 'PostgreSQL', 'Airflow'],
-    year: 2024
+    name: 'Speech Therapy',
+    description: 'Web speech coach that records, scores clarity, and suggests exercises',
+    image: '/projects/SpeechTherapy.png',
+    location: 'https://speech-therapy-lilac.vercel.app/',
+    types: ['TypeScript', 'Next.js', 'Node.js', 'React', 'Tailwind CSS'],
+    year: 2025
   },
   {
     id: 2,
-    name: 'Charizard Charts',
-    description: 'A blazing‑fast charting micro‑lib with tiny bundle size and zero deps. Ships with adapters for React and vanilla.',
-    image: '/profile.png',
+    name: 'NBA Predictor',
+    description: 'Predicts NBA game outcomes using historical data and machine learning.',
+    image: '/projects/NBAPredictor.png',
     location: 'https://github.com/you/charizard-charts',
-    types: ['React', 'D3', 'Vite'],
-    year: 2024
+    types: ['Python', 'Scikit-Learn', 'React', 'Flask API'],
+    year: 2025
   },
   {
     id: 3,
     name: 'Weather App',
-    description: 'Web speech coach that records, scores clarity, and suggests drills. Poké‑clean UI and privacy‑first.',
+    description: 'Displays weather information using a third-party API.',
     image: '../projects/WeatherApp.png',
     location: 'https://weatherapp-np1t.onrender.com/',
-    types: ['Next.js', 'WebAudio', 'OpenAI'],
+    types: ['Python', 'Supabase', 'SQL', 'Flask API', 'HTML', 'JavaScript'],
     year: 2025
   }
 ];

@@ -79,13 +79,14 @@ export default function Pokedex() {
             <p className="mt-4 text-xl leading-7 min-h-[6rem]">{current.description}</p>
 
             <div className="mt-4 flex flex-wrap gap-2">
+              Type: 
               {current.types.map((t) => (
                 <span key={t} className="badge bg-white/70 dark:bg-zinc-700">{t}</span>
               ))}
             </div>
 
             <div className="mt-6 flex items-center gap-3">
-              <a href={current.location} target="_blank" rel="noreferrer" className="px-4 py-2 bg-poke-600 text-white rounded-xl px-btn px-border">Location: Here ↗</a>
+              <a href={current.location} target="_blank" rel="noreferrer" className="px-4 py-2 bg-poke-600 text-white rounded-xl px-btn px-border">Location: Click Here ↗</a>
               <button className="px-3 py-2 rounded-xl border bg-white dark:bg-zinc-700 px-border" onClick={() => navigator.clipboard.writeText(current.location)}>Copy Link</button>
             </div>
           </div>
