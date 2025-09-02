@@ -13,7 +13,7 @@ const projects = [
     id: 2,
     name: 'Charizard Charts',
     description: 'A blazing‑fast charting micro‑lib with tiny bundle size and zero deps. Ships with adapters for React and vanilla.',
-    image: '/projects/charizard-charts.png',
+    image: '/profile.png',
     location: 'https://github.com/you/charizard-charts',
     types: ['React', 'D3', 'Vite'],
     year: 2024

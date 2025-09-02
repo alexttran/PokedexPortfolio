@@ -24,10 +24,10 @@ export default function ContactForm() {
         <p className="mt-2">Email, LinkedIn, GitHub, or the form below.</p>
 
         <div className="mt-4 flex flex-wrap gap-3">
-          <a className="badge linkish" href="mailto:you@example.com">✉︎ you@example.com</a>
-          <a className="badge linkish" href="https://www.linkedin.com/in/your-handle" target="_blank">in/your-handle</a>
-          <a className="badge linkish" href="https://github.com/your-handle" target="_blank">github.com/your-handle</a>
-          <button className="badge" onClick={() => navigator.clipboard.writeText('+1 (555) 123‑4567')}>📞 Copy Phone</button>
+          <a className="badge linkish" href="mailto:attran6@wisc.edu">✉︎ attran6@wisc.edu</a>
+          <a className="badge linkish" href="https://www.linkedin.com/in/alex-t-tran" target="_blank">in/alex-t-tran</a>
+          <a className="badge linkish" href="https://github.com/alexttran" target="_blank">github.com/alexttran</a>
+          <button className="badge" onClick={() => navigator.clipboard.writeText('+1 (503) 330‑2871')}>📞 503-330-2871</button>
         </div>
 
 

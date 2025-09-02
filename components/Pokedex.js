@@ -106,7 +106,7 @@ export default function Pokedex() {
           <button
             key={p.id}
             onClick={() => { setIndex(i); bleep(); }}
-            className={`w-full text-left rounded-lg px-3 py-2 mb-2 border px-border ${i===index ? 'bg-poke-100 border-poke-600' : 'bg-white/70 dark:bg-zinc-700/60'}`}
+            className={`w-full text-left rounded-lg px-3 py-2 mb-2 border px-border ${i===index ? 'bg-poke-100 border-poke-600 text-black' : 'bg-white/70 dark:bg-zinc-700/60'}`}
           >
             <div className="flex items-center gap-3">
               <span className="text-sm opacity-70">No.{String(p.id).padStart(3,'0')}</span>
