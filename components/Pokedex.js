@@ -85,13 +85,8 @@ export default function Pokedex() {
             </div>
 
             <div className="mt-6 flex items-center gap-3">
-              <a href={current.location} target="_blank" rel="noreferrer" className="px-4 py-2 bg-poke-600 text-white rounded-xl px-btn px-border">Open Project ↗</a>
+              <a href={current.location} target="_blank" rel="noreferrer" className="px-4 py-2 bg-poke-600 text-white rounded-xl px-btn px-border">Location: Here ↗</a>
               <button className="px-3 py-2 rounded-xl border bg-white dark:bg-zinc-700 px-border" onClick={() => navigator.clipboard.writeText(current.location)}>Copy Link</button>
-            </div>
-
-            <div className="mt-6 flex gap-3">
-              <button aria-label="Prev" onClick={() => goto(index - 1)} className="px-4 py-2 rounded-xl bg-zinc-200 dark:bg-zinc-700 px-btn px-border">↑ Prev</button>
-              <button aria-label="Next" onClick={() => goto(index + 1)} className="px-4 py-2 rounded-xl bg-zinc-200 dark:bg-zinc-700 px-btn px-border">↓ Next</button>
             </div>
           </div>
         </div>
@@ -99,23 +94,51 @@ export default function Pokedex() {
 
 
       {/* Index list */}
-      <div className="card p-4">
-        <h4 className="text-2xl mb-2">Index</h4>
-        <div className="max-h-[28rem] overflow-y-auto pr-2">
+      <div className="card p-4 flex flex-col">
+        <div className="flex items-center justify-between mb-2">
+          <h4 className="text-2xl">Index</h4>
+          <div className="flex flex-col gap-2 ml-auto">
+            <button
+              aria-label="Prev"
+              onClick={() => goto(index - 1)}
+              className="px-2 py-1 rounded bg-zinc-200 dark:bg-zinc-700 px-border"
+            >
+              ↑
+            </button>
+            <button
+              aria-label="Next"
+              onClick={() => goto(index + 1)}
+              className="px-2 py-1 rounded bg-zinc-200 dark:bg-zinc-700 px-border"
+            >
+              ↓
+            </button>
+          </div>
+        </div>
+        <div className="flex-1 overflow-y-auto pr-2">
           {sorted.map((p, i) => (
-          <button
-            key={p.id}
-            onClick={() => { setIndex(i); bleep(); }}
-            className={`w-full text-left rounded-lg px-3 py-2 mb-2 border px-border ${i===index ? 'bg-poke-100 border-poke-600 text-black' : 'bg-white/70 dark:bg-zinc-700/60'}`}
-          >
-            <div className="flex items-center gap-3">
-              <span className="text-sm opacity-70">No.{String(p.id).padStart(3,'0')}</span>
-              <span className="font-bold">{p.name}</span>
-            </div>
-            <div className="mt-1 flex flex-wrap gap-1">
-              {p.types.map(t => <span key={t} className="badge text-xs">{t}</span>)}
-            </div>
-          </button>
+            <button
+              key={p.id}
+              onClick={() => { setIndex(i); bleep(); }}
+              className={`w-full text-left rounded-lg px-3 py-2 mb-2 border px-border ${
+                i === index
+                  ? 'bg-poke-100 border-poke-600 text-black'
+                  : 'bg-white/70 dark:bg-zinc-700/60'
+              }`}
+            >
+              <div className="flex items-center gap-3">
+                <span className="text-sm opacity-70">
+                  No.{String(p.id).padStart(3, '0')}
+                </span>
+                <span className="font-bold">{p.name}</span>
+              </div>
+              <div className="mt-1 flex flex-wrap gap-1">
+                {p.types.map((t) => (
+                  <span key={t} className="badge text-xs">
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </button>
           ))}
         </div>
       </div>
