@@ -9,7 +9,7 @@ import PokeHeader from '@/components/PokeHeader';
 export default function Page() {
   return (
   <main>
-    <ThemeToggle />
+    {/* <ThemeToggle /> */}
     <PokeHeader />
     <TrainerCard />
     <Pokedex />

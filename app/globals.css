@@ -28,3 +28,24 @@ html, body { scroll-behavior: smooth; }
 .linkish { @apply underline decoration-dotted underline-offset-2 hover:text-poke-600; }
 ::selection { background: var(--color-poke-600); color: white; }
 
+/* Flip card helpers (consistent size) */
+.flip { perspective: 600px; }
+.flip-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 500ms ease;
+  min-height: 24rem; /* <- controls card height; tweak as you like */
+}
+.flip.flipped .flip-inner { transform: rotateY(180deg); }
+
+.flip-face {
+  backface-visibility: hidden;
+  position: absolute;
+  inset: 0;            /* front/back fill the card */
+  padding: 1.5rem;     /* same as p-6 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* keep content near top in a stable way */
+}
+.flip-back { transform: rotateY(180deg); }
+
