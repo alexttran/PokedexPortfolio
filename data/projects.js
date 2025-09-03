@@ -14,7 +14,7 @@ const projects = [
     name: 'NBA Predictor',
     description: 'Predicts NBA game outcomes using historical data and machine learning.',
     image: '/projects/NBAPredictor.png',
-    location: 'https://github.com/you/charizard-charts',
+    location: 'https://nba-prediction-seven.vercel.app/',
     types: ['Python', 'Scikit-Learn', 'React', 'Flask API'],
     year: 2025
   },
