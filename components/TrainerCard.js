@@ -37,10 +37,10 @@ export default function TrainerCard() {
             <div className="flip-face p-6">
               <div className="flex items-center gap-3">
                 <div className="badge">
-                  Trainer ID: <span className="font-bold">#012345</span>
+                  Trainer ID: <span className="font-bold">#252525</span>
                 </div>
                 <div className="badge">
-                  Hometown: <span className="font-bold">Pallet Town (Portland, OR)</span>
+                  Hometown: <span className="font-bold">Rose City (Portland, OR)</span>
                 </div>
                 <button
                   onClick={() => setFlipped(true)}

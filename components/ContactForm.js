@@ -12,15 +12,17 @@ export default function ContactForm() {
     // Simple mailto fallback (no backend). Replace with your form service if desired.
     const subject = encodeURIComponent('Portfolio Contact');
     const body = encodeURIComponent(`Name: ${state.name}\nEmail: ${state.email}\nPhone: ${state.phone}\n\n${state.message}`);
-    window.location.href = `mailto:you@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:attran6@wisc.edu?subject=${subject}&body=${body}`;
     setSent(true);
   };
 
 
   return (
     <section id="contact" className="section">
+      <h2 className= "text-4xl font-bold tracking-wide text-poke-700 mb-6">
+        Contact
+      </h2>
       <div className="card p-6">
-        <h2 className="text-4xl font-bold tracking-wide text-poke-700">Contact</h2>
         <p className="mt-2">Email, LinkedIn, GitHub, or the form below.</p>
 
         <div className="mt-4 flex flex-wrap gap-3">
