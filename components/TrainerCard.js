@@ -8,10 +8,9 @@ const SKILLS = {
 };
 
 export default function TrainerCard() {
-  const [avatarSrc, setAvatarSrc] = useState('/avatar.png');
+  const [avatarSrc, setAvatarSrc] = useState('../public/profile.png');
   const [flipped, setFlipped] = useState(false);
-  const [cat, setCat] = useState(() => localStorage.getItem('badgeCat') || 'languages');
-  const setCatPersist = (k) => { setCat(k); localStorage.setItem('badgeCat', k); };
+  const [category, setCategory] = useState('languages');
 
   return (
     <section id="about" className="section">
@@ -53,7 +52,7 @@ export default function TrainerCard() {
               </div>
 
               <div className="mt-4 badge">
-                Current Party: <span className="font-bold">Python · Java · JavaScript · Git</span>
+                Current Party: <span className="font-bold">Python · Java · JavaScript · HTML/CSS</span>
               </div>
 
               <p className="mt-6 text-xl leading-7">
@@ -89,9 +88,9 @@ export default function TrainerCard() {
                 {['languages', 'devtools', 'libraries'].map((k) => (
                   <button
                     key={k}
-                    onClick={() => setCatPersist(k)}
+                    onClick={() => setCategory(k)}
                     className={`badge capitalize ${
-                      cat === k ? 'bg-poke-100 border-poke-600 text-black' : 'bg-white/70 dark:bg-zinc-700'
+                      category === k ? 'bg-poke-100 border-poke-600 text-black' : 'bg-white/70 dark:bg-zinc-700'
                     }`}
                   >
                     {k}
@@ -101,7 +100,7 @@ export default function TrainerCard() {
 
               {/* Skills grid */}
               <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-3">
-                {SKILLS[cat].map((s) => (
+                {SKILLS[category].map((s) => (
                   <div key={s} className="badge bg-white/80 dark:bg-zinc-700/80">
                     {s}
                   </div>
