@@ -4,7 +4,7 @@ const projects = [
     id: 1,
     name: 'Speech Therapy',
     description: 'Web speech coach that records, scores clarity, and suggests exercises',
-    image: '/projects/SpeechTherapy.png',
+    image: '../projects/SpeechTherapy.png',
     location: 'https://speech-therapy-lilac.vercel.app/',
     types: ['TypeScript', 'Next.js', 'Node.js', 'React', 'Tailwind CSS'],
     year: 2025
@@ -13,7 +13,7 @@ const projects = [
     id: 2,
     name: 'NBA Predictor',
     description: 'Predicts NBA game outcomes using historical data and machine learning.',
-    image: '/projects/NBAPredictor.png',
+    image: '../projects/NBAPredictor.png',
     location: 'https://nba-prediction-seven.vercel.app/',
     types: ['Python', 'Scikit-Learn', 'React', 'Flask API'],
     year: 2025

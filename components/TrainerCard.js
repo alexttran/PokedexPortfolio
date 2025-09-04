@@ -8,7 +8,7 @@ const SKILLS = {
 };
 
 export default function TrainerCard() {
-  const [avatarSrc, setAvatarSrc] = useState('../public/profile.png');
+  const [avatarSrc, setAvatarSrc] = useState('../profile.png');
   const [flipped, setFlipped] = useState(false);
   const [category, setCategory] = useState('languages');
 
