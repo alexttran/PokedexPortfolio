@@ -56,7 +56,7 @@ export default function TrainerCard() {
               </div>
 
               <p className="mt-6 text-xl leading-7">
-                I'm Alex Tran, a software engineer who loves to push the boundaries of my technical ability. 
+                I&apos;m Alex Tran, a software engineer who loves to push the boundaries of my technical ability. 
                 As a student always dedicated to learning, I approach every new opportunity with curiosity and passion. 
                 I love working with others to accomplish a shared goal.
               </p>
