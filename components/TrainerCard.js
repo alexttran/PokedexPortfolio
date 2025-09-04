@@ -2,9 +2,9 @@
 import { useState } from 'react';
 
 const SKILLS = {
-  languages: ['JavaScript', 'TypeScript', 'Python', 'SQL'],
-  devtools: ['Git', 'Docker', 'Vercel', 'Supabase', 'Postman'],
-  libraries: ['React', 'Next.js', 'Tailwind', 'Express', 'Prisma'],
+  languages: ['Java', 'Python', 'JavaScript', 'HTML/CSS', 'SQL'],
+  devtools: ['Git', 'Vercel', 'Supabase', 'VSCode', 'IntelliJ IDEA'],
+  libraries: ['React', 'React Native', 'Pytorch', 'Node.js', 'Tailwind'],
 };
 
 export default function TrainerCard() {
@@ -53,7 +53,7 @@ export default function TrainerCard() {
               </div>
 
               <div className="mt-4 badge">
-                Current Party: <span className="font-bold">Next.js · Node · Postgres · Tailwind</span>
+                Current Party: <span className="font-bold">Python · Java · JavaScript · Git</span>
               </div>
 
               <p className="mt-6 text-xl leading-7">
@@ -107,10 +107,6 @@ export default function TrainerCard() {
                   </div>
                 ))}
               </div>
-
-              <p className="mt-6 text-sm opacity-70">
-                Tip: Edit badges in <code>components/TrainerCard.js</code> by updating the <code>SKILLS</code> map.
-              </p>
             </div>
           </div>
         </div>
